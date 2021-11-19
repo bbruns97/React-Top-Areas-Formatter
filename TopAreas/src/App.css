@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body h1,h2,h3,h4,h5,h6,span,p,input {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  background-color: rgb(0, 223, 211) !important;
+  min-height: 100vh;
+}
+
+.urlCollWrapper {
+  width: 95%;
+  min-height: 200px;
+  box-shadow: 10px 10px rgb(255, 123, 90);
+  border: 5px solid rgb(255, 123, 90);
+  position: relative;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: white;
+}
+
+.tabSelectorWrapper {
+  /*border: 2px solid rgb(255, 123, 90);*/
+  box-shadow: 0 0 10px rgb(214, 214, 214);
+  width: 100%;
+  min-height: 40px;
+  border-radius: 20px;
+  position: relative;
+  padding: 0;
+}
+
+.tabSelectorWrapper ul {
+  list-style-type: none;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  padding: 0;
+  grid-template-columns: auto auto auto;
+
+}
+
+.tabSelectorWrapper ul li {
+  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 10px;
+  border-radius: 17px;
+  color: lightgray;
+  transition: 0.3s;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.tabSelectorWrapper ul li:hover {
+  cursor: pointer;
+}
+
+.urlInput {
+  width: 100%;
+  border-radius: 25px;
+  margin: 10px auto;
+  height: 50px;
+  outline: none;
+  /*border: 2px solid rgb(255, 123, 90);*/
+  border: none;
+  box-shadow: 0 0 10px rgb(214, 214, 214);
+  padding: 3px 20px;
+  color: rgb(255, 123, 90);
+  font-weight: bolder;
+}  
+.urlInput::placeholder {
+  color: lightgray;
+}
+
+.resultsArea {
+  height: auto;
+  min-height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 50px 100px;
+  column-gap: 10px;
+}
+
+.message {
+  padding: 0 0 0 20px;
+  margin: 0;
+  color: lightgray;
+  font-weight: bolder;
+  height: 20px;
+  text-overflow: clip;
+  word-wrap: unset;
+  overflow: hidden;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+}
+
+.resultsArea button {
+  outline: none;
+  border: none;
+  background-color: rgb(255, 123, 90);
+  color: white;
+  font-weight: bold;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+.clip-btn {
+  border-radius: 50%;
+  height: 50px !important;
+  width: 50px !important;
+  padding: 5px;
+}
+
+.add-btn {
+  background-color: white;
+  position: relative;
+  padding: 10px 50px;
+  font-weight: bold;
+  color: rgb(255, 123, 90);
+  border-radius: 100px;
+  border: 5px solid rgb(255, 123, 90);
+}
+
+.under-sect {
+  display: flex;
+  width: 95%;
+  padding: 10px 0;
+  margin: 0 auto 100px auto;
+  justify-content: flex-end;
+}
+
+.title {
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 70px;
+}
+
+.subtitle {
+  color: white;
+  max-width: 900px;
+  width: 65%;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 123, 90, 1);
+  z-index: -1;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 0%, 100% 10%, 10% 100%, 0% 100%)
+}
+
