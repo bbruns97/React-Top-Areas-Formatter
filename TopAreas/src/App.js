@@ -5,13 +5,17 @@ import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import URLCollector from "./URLCollector";
 
+
 function App() {
+  var key = 1;
+
   const [collectors, updateCollectors] = useState([
-    <URLCollector></URLCollector>,
+    <URLCollector id={0}></URLCollector>,
   ]);
 
   const addCollector = () => {
-    updateCollectors(collectors.concat(<URLCollector></URLCollector>));
+    updateCollectors(collectors.concat(<URLCollector id={key}></URLCollector>));
+    key++;
   };
 
   const calcAll = () => {

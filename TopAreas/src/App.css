@@ -94,12 +94,12 @@ body {
   height: 20px;
   text-overflow: clip;
   word-wrap: unset;
-  overflow: hidden;
 }
 
 .result {
   display: flex;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .resultsArea button {
