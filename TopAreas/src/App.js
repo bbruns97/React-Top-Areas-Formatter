@@ -7,7 +7,7 @@ import URLCollector from "./URLCollector";
 
 
 function App() {
-  var key = 1;
+  const [key, updateKey] = useState(1)
 
   const [collectors, updateCollectors] = useState([
     <URLCollector id={0}></URLCollector>,
@@ -15,7 +15,7 @@ function App() {
 
   const addCollector = () => {
     updateCollectors(collectors.concat(<URLCollector id={key}></URLCollector>));
-    key++;
+    updateKey(key + 1)
   };
 
   const calcAll = () => {

@@ -1,64 +1,98 @@
-import React, { Component, useRef, useState, useEffect, useImperativeHandle, forwardRef } from "react";
+import React, {
+  Component,
+  useRef,
+  useState,
+  useEffect,
+  useImperativeHandle,
+  forwardRef,
+} from "react";
 
 const URLCollector = forwardRef((props, ref) => {
-
   const [urlType, setType] = useState("city");
   const [copied, setCopyStatus] = useState(0);
   const [result, setResult] = useState(null);
   const btnRef = useRef();
 
-
-  const copyToClip = ()  => {
+  const copyToClip = () => {
     navigator.clipboard.writeText(result);
-    setCopyStatus(1)
+    setCopyStatus(1);
     setTimeout(() => {
-        setCopyStatus(0)
-    }, 2000)
+      setCopyStatus(0);
+    }, 2000);
   };
 
-  const calcNewURL = ()  => {
-      const originalURL = document.getElementById(props.id).value
-      reformatPolygon(originalURL)
+  const calcNewURL = () => {
+    const originalURL = document.getElementById(props.id).value;
+    
+    if (originalURL.includes("polygon")) {
+      if (originalURL.includes("propertyType")){
+        reformatPolygon(originalURL)
+        console.log("REGULAR POLYGON")
+      }
+      else {
+        reformatMultisearchPolygon(originalURL)
+        console.log("MULTISEARCH POLYGON")
+      }
+    }
+    else {
+      reformat(originalURL)
+      console.log("REGULAR CITY LINK")
+    }
+
   };
 
   const reformat = (input) => {
-    
-        let search = input.indexOf('m/search');
-        let multiSearch = input.indexOf('multi_search');
-        let status = input.indexOf('status=1');
-        let section = input.slice(multiSearch,status+8);
-        let reformatted = "/search?" + section + input.slice(search+8);
-        let multicat = input.indexOf('&multi_cat');
-        setResult(reformatted)
-    
-}
+    let search = input.indexOf("m/search");
+    let multiSearch = input.indexOf("multi_search");
+    let status = input.indexOf("status=1");
+    let section = input.slice(multiSearch, status + 8);
+    let reformatted = "/search?" + section + input.slice(search + 8);
+    let multicat = input.indexOf("&multi_cat");
+    setResult(reformatted.replace("%7C", ","));
+  };
 
-const reformatPolygon = (input) => {
-  let search = input.indexOf('m/search');
-  var newURL = input
-  console.log(newURL)
-  console.log(typeof newURL)
-  //var reformatted = "/search?"
-  //reformatted += url.replace(url.slice(url.indexOf("view"), url.indexOf("_view") + 5), "")
-  let propertyType = newURL.indexOf('propertyType');
-  let status = newURL.indexOf('status=1');
-  let reformatted = "/search?" + newURL.slice(propertyType, status+8) + newURL.slice(newURL.indexOf("#?q"), newURL.indexOf("offset=0") + 8)
-  setResult(reformatted)
-}
+  const reformatPolygon = (input) => {
+    let search = input.indexOf("m/search");
+    var newURL = input;
+    console.log(newURL);
+    console.log(typeof newURL);
+    //var reformatted = "/search?"
+    //reformatted += url.replace(url.slice(url.indexOf("view"), url.indexOf("_view") + 5), "")
+    let propertyType = newURL.indexOf("propertyType");
+    let status = newURL.indexOf("status=1");
+    let reformatted =
+      "/search?" +
+      newURL.slice(propertyType, status + 8) +
+      newURL.slice(newURL.indexOf("#?q"), newURL.indexOf("offset=0") + 8);
+    setResult(reformatted.replace("%7C", ","));
+  };
+
+  const reformatMultisearchPolygon = (input) => {
+    let search = input.indexOf("m/search");
+    var newURL = input;
+    console.log(newURL);
+    console.log(typeof newURL);
+    //var reformatted = "/search?"
+    //reformatted += url.replace(url.slice(url.indexOf("view"), url.indexOf("_view") + 5), "")
+    let multiSearch = newURL.indexOf("multi_search");
+    let status = newURL.indexOf("status=1");
+    let reformatted =
+      "/search?" +
+      newURL.slice(multiSearch, status + 8) +
+      newURL.slice(newURL.indexOf("#?q"), newURL.indexOf("offset=0") + 8);
+    setResult(reformatted.replace("%7C", ","));
+  };
 
   useImperativeHandle(ref, () => ({
-
-    calcNewURL () {
-        setResult(urlType);
-      }
-
+    calcNewURL() {
+      setResult(urlType);
+    },
   }));
 
   return (
     <div className="animate__animated animate__slideInLeft">
       <div className="urlCollWrapper">
-        {
-        /*<div className="tabSelectorWrapper">
+        {/*<div className="tabSelectorWrapper">
           <ul>
             <li
               style={{
@@ -94,22 +128,42 @@ const reformatPolygon = (input) => {
               Special Filter
             </li>
           </ul>
-        </div>*/
-        }
+        </div>*/}
         <div>
-            <input id={props.id.toString()} className="urlInput" required placeholder="Enter your URL..."></input>
+          <input
+            id={props.id.toString()}
+            className="urlInput"
+            required
+            placeholder="Enter your URL..."
+          ></input>
         </div>
 
         <div className="resultsArea">
-            <div className="result">
-                <p ref={btnRef} className="message">{result !== null ? result : ""}</p>
-            </div>
-            <button className="clip-btn" onClick={() => copyToClip()} className="copy-btn" disabled={result !== null ? "" : "true"} style={{backgroundColor: result !== null ? "rgb(255, 123, 90)" : "rgba(255, 123, 90, 0.3)"}}><i className={copied === 0 ? "fa fa-clipboard" : "fa fa-check"}></i></button>
-            <button className="go-btn"  onClick={() => calcNewURL()}>GO</button>
+          <div className="result">
+            <p ref={btnRef} className="message">
+              {result !== null ? result : ""}
+            </p>
+          </div>
+          <button
+            className="clip-btn"
+            onClick={() => copyToClip()}
+            className="copy-btn"
+            disabled={result !== null ? "" : "true"}
+            style={{
+              backgroundColor:
+                result !== null
+                  ? "rgb(255, 123, 90)"
+                  : "rgba(255, 123, 90, 0.3)",
+            }}
+          >
+            <i className={copied === 0 ? "fa fa-clipboard" : "fa fa-check"}></i>
+          </button>
+          <button className="go-btn" onClick={() => calcNewURL()}>
+            GO
+          </button>
         </div>
-
       </div>
     </div>
-  )
-            })
-            export default URLCollector;
+  );
+});
+export default URLCollector;

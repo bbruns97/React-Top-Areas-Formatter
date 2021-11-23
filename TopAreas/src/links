@@ -1,33 +1,43 @@
 /search?propertyType=Condo/Townhouse|Residential|Multi-Family|Mobile/Modular+Home&status=1#?q_limit=10000000&mlsId=366&price=10000:&propertyType=Condo/Townhouse|Residential|Multi-Family|Mobile/Modular+Home&status=1|3&polygon=(61.240,-149.836),(61.238,-149.871),(61.232,-149.910),(61.221,-149.936),(61.209,-149.949),(61.190,-149.958),(61.176,-149.957),(61.168,-149.932),(61.165,-149.881),(61.174,-149.797),(61.185,-149.739),(61.197,-149.710),(61.204,-149.702),(61.219,-149.715),(61.226,-149.726),(61.233,-149.754),(61.237,-149.781),(61.238,-149.798),(61.239,-149.810),(61.240,-149.820),(61.240,-149.827),(61.240,-149.834),(61.240,-149.838),(61.240,-149.839),(61.239,-149.840)&q_sort=createdAt-&q_offset=0
-
-"" === "" ? 
-
-
 /search?propertyType=Condo/Townhouse|Residential|Multi-Family|Mobile/Modular+Home&status=1#?q_limit=10000000&mlsId=366&price=10000:&propertyType=Condo/Townhouse|Residential|Multi-Family|Mobile/Modular+Home&status=1|3&polygon=(61.240,-149.836),(61.238,-149.871),(61.232,-149.910),(61.221,-149.936),(61.209,-149.949),(61.190,-149.958),(61.176,-149.957),(61.168,-149.932),(61.165,-149.881),(61.174,-149.797),(61.185,-149.739),(61.197,-149.710),(61.204,-149.702),(61.219,-149.715),(61.226,-149.726),(61.233,-149.754),(61.237,-149.781),(61.238,-149.798),(61.239,-149.810),(61.240,-149.820),(61.240,-149.827),(61.240,-149.834),(61.240,-149.838),(61.240,-149.839),(61.239,-149.840)&q_sort=createdAt-&q_offset=0
 
+EXAMPLE POLYGON LINK:
+https://alexissandbox.brivityidx.com/search?view=gallery_view#?q_limit=36&mlsId=101&propertyType=Residential|Multi-Family|Condo/Townhome&status=1|3&polygon=(47.700,-122.225),(47.697,-122.283),(47.686,-122.310),(47.670,-122.338),(47.618,-122.381),(47.583,-122.397),(47.558,-122.405),(47.538,-122.403),(47.513,-122.381),(47.488,-122.346),(47.475,-122.189),(47.481,-122.099),(47.487,-122.081),(47.497,-122.073),(47.550,-122.051),(47.585,-122.041),(47.643,-122.026),(47.684,-122.029),(47.699,-122.056),(47.704,-122.084),(47.702,-122.129),(47.698,-122.166),(47.697,-122.190),(47.695,-122.208),(47.695,-122.219),(47.695,-122.226),(47.696,-122.230),(47.698,-122.234),(47.699,-122.241)&q_sort=createdAt-&q_offset=0
+
+EXAMPLE MULTIPLE CITIES LINK:
 
 
+EXAMPLE 1 COUNTY LINK:
+https://alexissandbox.brivityidx.com/search#?q_limit=36&mlsId=101&multi_search=Whatcom,%20WA&multi_cat=CountyState&propertyType=Residential|Multi-Family|Condo/Townhome&status=1|3&q_sort=createdAt-&q_offset=0
+
+EXAMPLE 1 CITY LINK:
+https://alexissandbox.brivityidx.com/search#?q_limit=36&mlsId=101&multi_search=Seattle,%20WA&multi_cat=CityState&propertyType=Residential|Multi-Family|Condo/Townhome&status=1|3&q_sort=createdAt-&q_offset=0
+
+EXAMPLE MORE DROPDOWN LINK:
+https://alexissandbox.brivityidx.com/search#?q_limit=36&mlsId=101&multi_search=Seattle,%20WA&multi_cat=CityState&propertyType=Residential|Multi-Family|Condo/Townhome&status=1|3&hasBasement=true&q_sort=createdAt-&q_offset=0
 
 
+WEIRD ASS LINK:
+https://alexissandbox.brivityidx.com/search?view=gallery_view#?q_limit=36&mlsId=101&multi_search=Seattle,%20WA%7C98001&multi_cat=CityState%7CZip&status=1|3&polygon=(47.645,-122.352),(47.643,-122.368),(47.639,-122.375),(47.636,-122.378),(47.626,-122.385),(47.616,-122.391),(47.606,-122.394),(47.598,-122.396),(47.590,-122.396),(47.584,-122.390),(47.575,-122.376),(47.569,-122.357),(47.566,-122.337),(47.566,-122.315),(47.569,-122.299),(47.573,-122.294),(47.574,-122.294),(47.582,-122.295),(47.596,-122.298),(47.608,-122.299),(47.614,-122.301),(47.622,-122.305),(47.628,-122.310),(47.631,-122.313),(47.634,-122.316),(47.636,-122.321),(47.638,-122.327),(47.640,-122.332),(47.641,-122.338),(47.642,-122.342),(47.644,-122.348),(47.644,-122.350),(47.645,-122.354),(47.646,-122.358),(47.646,-122.361)&q_sort=createdAt-&q_offset=0
+/search?multi_search=Seattle,%20WA%7C98001&multi_cat=CityState%7CZip&status=1#?q_limit=36&mlsId=101&multi_search=Seattle,%20WA%7C98001&multi_cat=CityState%7CZip&status=1|3&polygon=(47.645,-122.352),(47.643,-122.368),(47.639,-122.375),(47.636,-122.378),(47.626,-122.385),(47.616,-122.391),(47.606,-122.394),(47.598,-122.396),(47.590,-122.396),(47.584,-122.390),(47.575,-122.376),(47.569,-122.357),(47.566,-122.337),(47.566,-122.315),(47.569,-122.299),(47.573,-122.294),(47.574,-122.294),(47.582,-122.295),(47.596,-122.298),(47.608,-122.299),(47.614,-122.301),(47.622,-122.305),(47.628,-122.310),(47.631,-122.313),(47.634,-122.316),(47.636,-122.321),(47.638,-122.327),(47.640,-122.332),(47.641,-122.338),(47.642,-122.342),(47.644,-122.348),(47.644,-122.350),(47.645,-122.354),(47.646,-122.358),(47.646,-122.361)&q_sort=createdAt-&q_offset=0
+/search?multi_search=Seattle,%20WA%7C98001&multi_cat=CityState%7CZip&status=1#?q_limit=36&mlsId=101&multi_search=Seattle,%20WA%7C98001&multi_cat=CityState%7CZip&status=1|3&polygon=(47.645,-122.352),(47.643,-122.368),(47.639,-122.375),(47.636,-122.378),(47.626,-122.385),(47.616,-122.391),(47.606,-122.394),(47.598,-122.396),(47.590,-122.396),(47.584,-122.390),(47.575,-122.376),(47.569,-122.357),(47.566,-122.337),(47.566,-122.315),(47.569,-122.299),(47.573,-122.294),(47.574,-122.294),(47.582,-122.295),(47.596,-122.298),(47.608,-122.299),(47.614,-122.301),(47.622,-122.305),(47.628,-122.310),(47.631,-122.313),(47.634,-122.316),(47.636,-122.321),(47.638,-122.327),(47.640,-122.332),(47.641,-122.338),(47.642,-122.342),(47.644,-122.348),(47.644,-122.350),(47.645,-122.354),(47.646,-122.358),(47.646,-122.361)&q_sort=createdAt-&q_offset=0
 
 
+/search?#?q_limit=36&mlsId=101&multi_search=Seattle,%20WA%7C98001&multi_cat=CityState%7CZip&status=1|3&polygon=(47.645,-122.352),(47.643,-122.368),(47.639,-122.375),(47.636,-122.378),(47.626,-122.385),(47.616,-122.391),(47.606,-122.394),(47.598,-122.396),(47.590,-122.396),(47.584,-122.390),(47.575,-122.376),(47.569,-122.357),(47.566,-122.337),(47.566,-122.315),(47.569,-122.299),(47.573,-122.294),(47.574,-122.294),(47.582,-122.295),(47.596,-122.298),(47.608,-122.299),(47.614,-122.301),(47.622,-122.305),(47.628,-122.310),(47.631,-122.313),(47.634,-122.316),(47.636,-122.321),(47.638,-122.327),(47.640,-122.332),(47.641,-122.338),(47.642,-122.342),(47.644,-122.348),(47.644,-122.350),(47.645,-122.354),(47.646,-122.358),(47.646,-122.361)&q_sort=createdAt-&q_offset=0
+
+FIREFOX:
+https://kristancole.com/search#?q_limit=36&mlsId=366&price=10000:&propertyType=Condo/Townhouse|Residential|Multi-Family|Mobile/Modular+Home&status=1|3&q_sort=createdAt-&q_offset=0
+OUT:
+/search?#?q_limit=36&mlsId=366&price=10000:&propertyType=Condo/Townhouse|Residential|Multi-Family|Mobile/Modular+Home&status=1|3&q_sort=createdAt-&q_offset=0
+
+SAFARI: 
+https://kristancole.com/search#?q_limit=36&mlsId=366&price=10000:&propertyType=Condo/Townhouse|Residential|Multi-Family|Mobile/Modular+Home&status=1|3&q_sort=createdAt-&q_offset=0
+
+CHROME: 
+https://kristancole.com/search#?q_limit=36&mlsId=366&price=10000:&propertyType=Condo/Townhouse|Residential|Multi-Family|Mobile/Modular+Home&status=1|3&q_sort=createdAt-&q_offset=0
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/search?multi_search=Seattle,%20WA&multi_cat=CityState&propertyType=Residential|Multi-Family|Condo/Townhome&status=1#?q_limit=36&mlsId=101&multi_search=Seattle,%20WA&multi_cat=CityState&propertyType=Residential|Multi-Family|Condo/Townhome&status=1|3&q_sort=createdAt-&q_offset=0
 
 
 
