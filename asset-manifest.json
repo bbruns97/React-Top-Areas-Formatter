@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/React-Top-Areas-Formatter/static/css/main.cdd5c4cd.chunk.css",
-    "main.js": "/React-Top-Areas-Formatter/static/js/main.19a4744a.chunk.js",
-    "main.js.map": "/React-Top-Areas-Formatter/static/js/main.19a4744a.chunk.js.map",
-    "runtime-main.js": "/React-Top-Areas-Formatter/static/js/runtime-main.86a8825f.js",
-    "runtime-main.js.map": "/React-Top-Areas-Formatter/static/js/runtime-main.86a8825f.js.map",
-    "static/css/2.383c0125.chunk.css": "/React-Top-Areas-Formatter/static/css/2.383c0125.chunk.css",
-    "static/js/2.adad0950.chunk.js": "/React-Top-Areas-Formatter/static/js/2.adad0950.chunk.js",
-    "static/js/2.adad0950.chunk.js.map": "/React-Top-Areas-Formatter/static/js/2.adad0950.chunk.js.map",
-    "index.html": "/React-Top-Areas-Formatter/index.html",
-    "static/css/2.383c0125.chunk.css.map": "/React-Top-Areas-Formatter/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.cdd5c4cd.chunk.css.map": "/React-Top-Areas-Formatter/static/css/main.cdd5c4cd.chunk.css.map",
-    "static/js/2.adad0950.chunk.js.LICENSE.txt": "/React-Top-Areas-Formatter/static/js/2.adad0950.chunk.js.LICENSE.txt"
+    "main.css": "/React-Top-Areas-Formatter/TopAreas/static/css/main.cdd5c4cd.chunk.css",
+    "main.js": "/React-Top-Areas-Formatter/TopAreas/static/js/main.24f5650d.chunk.js",
+    "main.js.map": "/React-Top-Areas-Formatter/TopAreas/static/js/main.24f5650d.chunk.js.map",
+    "runtime-main.js": "/React-Top-Areas-Formatter/TopAreas/static/js/runtime-main.64a5f189.js",
+    "runtime-main.js.map": "/React-Top-Areas-Formatter/TopAreas/static/js/runtime-main.64a5f189.js.map",
+    "static/css/2.383c0125.chunk.css": "/React-Top-Areas-Formatter/TopAreas/static/css/2.383c0125.chunk.css",
+    "static/js/2.e7849a1e.chunk.js": "/React-Top-Areas-Formatter/TopAreas/static/js/2.e7849a1e.chunk.js",
+    "static/js/2.e7849a1e.chunk.js.map": "/React-Top-Areas-Formatter/TopAreas/static/js/2.e7849a1e.chunk.js.map",
+    "index.html": "/React-Top-Areas-Formatter/TopAreas/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/React-Top-Areas-Formatter/TopAreas/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.cdd5c4cd.chunk.css.map": "/React-Top-Areas-Formatter/TopAreas/static/css/main.cdd5c4cd.chunk.css.map",
+    "static/js/2.e7849a1e.chunk.js.LICENSE.txt": "/React-Top-Areas-Formatter/TopAreas/static/js/2.e7849a1e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.86a8825f.js",
+    "static/js/runtime-main.64a5f189.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.adad0950.chunk.js",
+    "static/js/2.e7849a1e.chunk.js",
     "static/css/main.cdd5c4cd.chunk.css",
-    "static/js/main.19a4744a.chunk.js"
+    "static/js/main.24f5650d.chunk.js"
   ]
 }
