@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bbruns97.github.io/React-Top-Areas-Formatter/TopAreas/build/",
+  "homepage": "https://bbruns97.github.io/React-Top-Areas-Formatter/TopAreas/build/index.html",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
